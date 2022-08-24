@@ -12,7 +12,9 @@ ENV HOME=/home/CrowFall_Map
 ENV APP_HOME=/home/CrowFall_Map
 RUN mkdir -p $APP_HOME
 RUN mkdir -p $APP_HOME/static
+RUN mkdir -p $APP_HOME/media
 WORKDIR $APP_HOME
+
 
 RUN apk update && apk add git
 RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
