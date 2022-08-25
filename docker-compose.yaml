@@ -7,6 +7,7 @@ services:
       - 80:80
     volumes:
       - static_volume:/home/CrowFall_Map/static
+      - media_volume:/home/CrowFall_Map/media
     depends_on:
       - web
     restart: always
