@@ -17,3 +17,7 @@
 После запуска проекта в докере, необходимо выполнить следующие команды:
 - ```docker compose exec web python3 manage.py migrate```
 - ```docker compose exec web python3 manage.py collectstatic --no-input```
+
+### Очистить БД
+Для очистки БД необходимо выполнить команду 
+```docker compose exec web python3 manage.py flush --no-input```
